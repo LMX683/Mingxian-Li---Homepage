@@ -253,8 +253,8 @@ body.theme-luka .content {
 
 body.theme-luka .section {
   margin-bottom: 44px;
-  opacity: 0;
-  transform: translateY(12px);
+  opacity: 1;
+  transform: none;
   transition: opacity 0.45s ease, transform 0.45s ease;
 }
 
@@ -524,4 +524,39 @@ body.theme-luka strong {
   body.theme-luka .pub-content .periodical {
     font-size: 13px;
   }
+}
+
+/* CV-aligned profile and readable research entries. */
+body.theme-luka .profile-monogram {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 28px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--luka-border);
+  color: var(--luka-accent);
+  font-size: 58px;
+  font-weight: 600;
+  letter-spacing: -0.06em;
+}
+body.theme-luka .profile-role { font-size: 13px; color: var(--luka-secondary); margin: 12px 0 8px; }
+body.theme-luka .entry-title { font-size: 17px; line-height: 1.5; margin: 0 0 8px; }
+body.theme-luka .entry-meta { color: var(--luka-secondary); font-size: 14px; }
+body.theme-luka .contributions { padding-left: 21px; margin: 14px 0; }
+body.theme-luka .contributions li { margin-bottom: 10px; }
+body.theme-luka .research-status { border-left: 3px solid var(--luka-accent); padding: 8px 14px; background: var(--luka-border); font-size: 14px; }
+body.theme-luka .education-metrics { margin-top: 10px; font-size: 14px; }
+body.theme-luka .education-metrics span { margin: 0 8px; }
+body.theme-luka .award-year { color: var(--luka-accent); font-size: 14px; font-weight: 600; align-self: flex-start; }
+body.theme-luka .skills-list { font-size: 14px; }
+body.theme-luka .file-label { font-size: 12px; font-weight: 400; }
+body.theme-luka .section { scroll-margin-top: 85px; }
+body.theme-luka a:focus-visible, body.theme-luka button:focus-visible { outline: 2px solid var(--luka-accent); outline-offset: 4px; }
+@media (max-width: 640px) {
+  body.theme-luka .profile-monogram { width: 128px; height: 128px; font-size: 42px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  body.theme-luka, body.theme-luka * { transition: none !important; }
 }
