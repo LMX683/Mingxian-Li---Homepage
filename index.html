@@ -2,11 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mingxian Li - Homepage</title>
   <meta name="description" content="Mingxian Li is an undergraduate at Sun Yat-sen University researching multimodal reasoning, 3D spatial intelligence, and AI for Science. His work includes SeeChem, a diagnostic benchmark for 3D chemical reasoning in vision-language models.">
-<meta name="keywords" content="Mingxian Li, Sun Yat-sen University, SeeChem, multimodal reasoning, 3D spatial intelligence, AI for Science, vision-language models, molecular reasoning">
+  <meta name="keywords" content="Mingxian Li, Sun Yat-sen University, SeeChem, multimodal reasoning, 3D spatial intelligence, AI for Science, vision-language models, molecular reasoning">
+  <meta name="theme-color" content="#faf9f7">
+  <link rel="canonical" href="https://lmx683.github.io/Mingxian-Li---Homepage/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mingxian Li | Multimodal Reasoning &amp; AI for Science">
+  <meta property="og:description" content="Undergraduate at Sun Yat-sen University. Research in multimodal reasoning, 3D spatial intelligence, and AI for Science.">
+  <meta property="og:url" content="https://lmx683.github.io/Mingxian-Li---Homepage/">
+  <meta property="og:image" content="https://lmx683.github.io/Mingxian-Li---Homepage/assets/img/mingxian-li.png">
+  <script>
+    try {
+      const saved = localStorage.getItem('theme');
+      if (saved === 'light' || saved === 'dark') document.documentElement.dataset.theme = saved;
+    } catch (_) {}
+  </script>
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,18 +28,24 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <link rel="stylesheet" href="assets/css/font_sans_serif.css">
-  <link rel="stylesheet" href="assets/css/theme-luka.css?v=20260928">
+  <link rel="stylesheet" href="assets/css/theme-luka.css?v=20260930">
 </head>
 <body class="theme-luka">
-  <nav class="top-nav">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <nav class="top-nav" aria-label="Main navigation">
     <div class="nav-container">
       <div class="nav-left">
-        <a href="./">Home</a>
+        <a class="wordmark" href="#about">Mingxian Li<span aria-hidden="true">.</span></a>
+      </div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#education">Education</a>
       </div>
       <div class="nav-right">
-        <button id="themeToggle" class="theme-toggle" title="Toggle theme" aria-label="Toggle theme">
-          <i class="fa-solid fa-moon"></i>
+        <button id="themeToggle" class="theme-toggle" type="button" title="Toggle theme" aria-label="Toggle dark mode" aria-pressed="false">
+          <span class="theme-symbol" aria-hidden="true">◐</span>
         </button>
       </div>
     </div>
@@ -36,58 +54,52 @@
   <div class="wrapper">
     <header class="sidebar">
       <div class="profile-card">
-        <div class="image avatar"><img src="assets/img/mingxian-li.png" alt="Mingxian Li" width="220" height="220" style="object-position: center 25%;"></div>
+        <div class="image avatar"><img src="assets/img/mingxian-li.png" alt="Mingxian Li" width="184" height="184" fetchpriority="high" decoding="async"></div>
 
         <h1 class="site-name">Mingxian Li</h1>
         <p class="profile-role">Undergraduate · Sun Yat-sen University</p>
-        <p class="site-email">limx253@mail2.sysu.edu.cn</p>
+        <p class="profile-location">Shenzhen, China</p>
+        <a class="site-email" href="mailto:limx253@mail2.sysu.edu.cn">limx253@mail2.sysu.edu.cn</a>
 
         <div class="social-icons">
-          <a href="mailto:limx253@mail2.sysu.edu.cn" title="Email" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
-          <a href="https://github.com/LMX683" title="GitHub" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-          <a href="https://scholar.google.com/citations?user=QG14KZsAAAAJ&hl=zh-CN" title="Google Scholar" aria-label="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+          <a href="mailto:limx253@mail2.sysu.edu.cn" title="Email" aria-label="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i><span>Email</span></a>
+          <a href="https://github.com/LMX683" title="GitHub" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i><span>GitHub</span></a>
+          <a href="https://scholar.google.com/citations?user=QG14KZsAAAAJ&hl=zh-CN" title="Google Scholar" aria-label="Google Scholar"><i class="ai ai-google-scholar" aria-hidden="true"></i><span>Scholar</span></a>
         </div>
 
         <div class="visitor-card">
           <div class="visitor-card-title">Research Interests</div>
-          <div class="visitor-card-body">Multimodal Reasoning<br>3D Spatial Intelligence<br>AI for Science</div>
+          <ul class="interest-list"><li>Multimodal Reasoning</li><li>3D Spatial Intelligence</li><li>AI for Science</li></ul>
         </div>
       </div>
     </header>
 
-    <main class="content">
+    <main class="content" id="main-content" tabindex="-1">
       <section class="section" id="about">
-        <h2 class="section-title">About Me</h2>
+        <p class="eyebrow">MULTIMODAL LEARNING · AI FOR SCIENCE</p>
+        <h2 class="intro-title">Connecting visual understanding<br class="desktop-break"> with scientific reasoning.</h2>
         <div class="section-body">
           <p>I am <strong>Mingxian Li</strong>, an undergraduate pursuing a B.Eng. in <strong>Microelectronics Science and Engineering</strong> at <strong>Sun Yat-sen University</strong> in Shenzhen, China.</p>
           <p>My research interests lie in <strong>multimodal reasoning, 3D spatial intelligence, and AI for Science</strong>. At the HCP Lab, I work with advisors <strong>Xiaodan Liang</strong> and <strong>Xiao Dong</strong> on diagnosing and improving how vision-language models connect 3D molecular geometry with chemical rules.</p>
-          <p>My current work includes <strong>SeeChem</strong>, a diagnostic benchmark for 3D chemical reasoning, and chemistry benchmark and data synthesis through a Sun Yat-sen University–Huawei collaboration.</p>
-          <p><strong><a href="assets/cv/Mingxian-Li-CV.pdf" target="_blank" rel="noopener">Download my CV <span class="file-label">(PDF)</span></a></strong></p>
-        </div>
-      </section>
-
-      <section class="section" id="education">
-        <h2 class="section-title">Education</h2>
-        <div class="section-body experience-item">
-          <img src="assets/img/sysu.svg" alt="Sun Yat-sen University logo" class="institution-logo">
-          <div class="experience-content">
-            <h3 class="entry-title">Sun Yat-sen University</h3>
-            <p>B.Eng. in Microelectronics Science and Engineering</p>
-            <p class="exp-detail">Shenzhen, China</p>
-            <p class="exp-period">Sept. 2024 – Present</p>
-            <p class="education-metrics"><strong>GPA:</strong> 3.7/4.0 <span aria-hidden="true">·</span> <strong>Data Structures:</strong> 97/100</p>
-          </div>
+          <p>My current work includes <a href="#experience"><strong>SeeChem</strong></a>, a diagnostic benchmark for 3D chemical reasoning, and chemistry benchmark and data synthesis through a Sun Yat-sen University–Huawei collaboration.</p>
+          <div class="intro-actions"><a class="button primary" href="assets/cv/Mingxian-Li-CV.pdf" target="_blank" rel="noopener">Download CV <span class="file-label">PDF ↗</span></a><a class="button secondary" href="#experience">Explore research <span aria-hidden="true">↓</span></a></div>
         </div>
       </section>
 
       <section class="section" id="experience">
         <h2 class="section-title">Research Experience</h2>
         <div class="section-body">
-          <article class="card">
+          <article class="card featured-card">
+            <p class="eyebrow">FEATURED RESEARCH</p>
             <h3 class="entry-title">SeeChem: 3D Molecular Reasoning in VLMs</h3>
             <p class="exp-period">Mar. 2026 – Present</p>
             <p class="entry-meta">Sun Yat-sen University, HCP Lab<br>Advisors: Xiaodan Liang, Xiao Dong</p>
             <p>Diagnosing and improving how vision-language models connect 3D molecular geometry with chemical rules.</p>
+            <dl class="research-metrics" aria-label="SeeChem benchmark at a glance">
+              <div><dt>Questions</dt><dd>5,065</dd></div>
+              <div><dt>Molecular instances</dt><dd>320</dd></div>
+              <div><dt>Reasoning tasks</dt><dd>5</dd></div>
+            </dl>
             <ul class="contributions">
               <li>Developed <strong>SeeChem</strong>, a diagnostic benchmark with <strong>5,065 questions across 320 molecular instances and five tasks</strong>, aligning spatial grounding, local rule application, and integrated reasoning within shared molecular contexts.</li>
               <li>Constructed <strong>SeeChem-Data</strong> with verifiable supervision across three reasoning stages, using molecular instances excluded from the benchmark.</li>
@@ -95,6 +107,22 @@
             </ul>
             <p class="research-status">Manuscript under review at AAAI 2027; advanced to Phase 2 review.</p>
           </article>
+        </div>
+      </section>
+
+      <section class="section" id="publications">
+        <h2 class="section-title">Publications &amp; Manuscripts</h2>
+        <div class="section-body publications">
+          <ol class="bibliography">
+            <li>
+              <article class="pub-content">
+                <h3 class="entry-title">SeeChem: A Diagnostic Benchmark for 3D Chemical Reasoning in Vision-Language Models</h3>
+                <p class="author"><strong>Mingxian Li<sup>*</sup></strong>, Kun Xiang<sup>*</sup>, Xiao Dong<sup>*</sup>, Haoyuan Li, Zhao Zhen-Hua, Jingbin Tan, Terry Jingchen Zhang, Haiyang Hu, Yangle Fang, Kunkun Liu, Changzheng Zhang, Dandan Tu, Xiaodan Liang</p>
+                <p class="periodical">Under Review · AAAI 2027</p>
+                <p class="exp-detail"><sup>*</sup> Equal contribution.</p>
+              </article>
+            </li>
+          </ol>
         </div>
       </section>
 
@@ -115,19 +143,17 @@
         </div>
       </section>
 
-      <section class="section" id="publications">
-        <h2 class="section-title">Publications &amp; Manuscripts</h2>
-        <div class="section-body publications">
-          <ol class="bibliography">
-            <li>
-              <article class="pub-content">
-                <h3 class="entry-title">SeeChem: A Diagnostic Benchmark for 3D Chemical Reasoning in Vision-Language Models</h3>
-                <p class="author"><strong>Mingxian Li<sup>*</sup></strong>, Kun Xiang<sup>*</sup>, Xiao Dong<sup>*</sup>, Haoyuan Li, Zhao Zhen-Hua, Jingbin Tan, Terry Jingchen Zhang, Haiyang Hu, Yangle Fang, Kunkun Liu, Changzheng Zhang, Dandan Tu, Xiaodan Liang</p>
-                <p class="periodical">Under Review · AAAI 2027</p>
-                <p class="exp-detail"><sup>*</sup> Equal contribution.</p>
-              </article>
-            </li>
-          </ol>
+      <section class="section" id="education">
+        <h2 class="section-title">Education</h2>
+        <div class="section-body experience-item">
+          <img src="assets/img/sysu.svg" alt="Sun Yat-sen University logo" class="institution-logo" width="52" height="52" loading="lazy">
+          <div class="experience-content">
+            <h3 class="entry-title">Sun Yat-sen University</h3>
+            <p>B.Eng. in Microelectronics Science and Engineering</p>
+            <p class="exp-detail">Shenzhen, China</p>
+            <p class="exp-period">Sept. 2024 – Present</p>
+            <p class="education-metrics"><strong>GPA:</strong> 3.7/4.0 <span aria-hidden="true">·</span> <strong>Data Structures:</strong> 97/100</p>
+          </div>
         </div>
       </section>
 
@@ -165,29 +191,6 @@
     </footer>
   </div>
 
-  <script src="assets/js/scale.fix.js"></script>
-  <script>
-    (function() {
-      const themeToggle = document.getElementById('themeToggle');
-      const icon = themeToggle.querySelector('i');
-
-      function setTheme(isDark) {
-        document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
-        icon.classList.toggle('fa-sun', isDark);
-        icon.classList.toggle('fa-moon', !isDark);
-        localStorage.setItem('theme', isDark ? 'dark' : 'light');
-      }
-
-      const savedTheme = localStorage.getItem('theme');
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      setTheme(savedTheme ? savedTheme === 'dark' : prefersDark);
-
-      themeToggle.addEventListener('click', function() {
-        const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-        setTheme(!isDark);
-      });
-
-    })();
-  </script>
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>
