@@ -158,3 +158,8 @@ strong { color: var(--text); font-weight: 600; }
   .card { break-inside: avoid; }
   body { background: white; color: black; }
 }
+
+.session-tools {text-align:left;max-width:650px;margin:20px auto;padding:16px;border:1px solid var(--border-color,#ddd);border-radius:12px;font-size:13px;}
+.session-tools summary {cursor:pointer;font-weight:600;}
+.session-tools button {font:inherit;padding:7px 12px;margin:4px;border:1px solid #bbb;border-radius:6px;cursor:pointer;background:transparent;color:inherit;}
+.session-tools a {display:inline-block;margin:8px;}

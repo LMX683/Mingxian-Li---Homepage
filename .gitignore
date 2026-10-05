@@ -7,3 +7,12 @@ Thumbs.db
 
 # macOS metadata
 ._*
+
+# Private recordings, analysis and local Python artifacts
+__pycache__/
+*.pyc
+.env
+node_modules/
+recordings/
+insights.json
+homepage-session*.json

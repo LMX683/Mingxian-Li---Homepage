@@ -188,9 +188,20 @@
         <br>
         <span class="template-credit"><a href="https://github.com/wzsyyh/luka-homepage-template">Luka Homepage Template</a> by <a href="https://wzsyyh.github.io/">Yuheng Yang</a></span>
       </p>
+      <details class="session-tools" data-session-ignore>
+        <summary>Session recording</summary>
+        <p>Optional local recording to help inspect this visit. Form values are masked. No data is uploaded.</p>
+        <button id="session-toggle" type="button">Start recording</button>
+        <button id="session-export" type="button" hidden>Export JSON</button>
+        <button id="session-clear" type="button">Clear recording</button>
+        <a href="session-player.html">Open replay viewer</a>
+        <p id="session-status" role="status">Recording off · no upload</p>
+      </details>
     </footer>
   </div>
 
   <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/session-tracker.js"></script>
+  <script src="assets/js/session-controls.js"></script>
 </body>
 </html>
