@@ -6,100 +6,139 @@
   <title>Mingxian Li - Homepage</title>
   <meta name="description" content="Mingxian Li is an undergraduate at Sun Yat-sen University researching multimodal reasoning, 3D spatial intelligence, and AI for Science. His work includes SeeChem, a diagnostic benchmark for 3D chemical reasoning in vision-language models.">
   <meta name="keywords" content="Mingxian Li, Sun Yat-sen University, SeeChem, multimodal reasoning, 3D spatial intelligence, AI for Science, vision-language models, molecular reasoning">
-  <meta name="theme-color" content="#faf9f7">
+  <meta name="theme-color" content="#f5f5f5">
   <link rel="canonical" href="https://lmx683.github.io/Mingxian-Li---Homepage/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Mingxian Li | Multimodal Reasoning &amp; AI for Science">
   <meta property="og:description" content="Undergraduate at Sun Yat-sen University. Research in multimodal reasoning, 3D spatial intelligence, and AI for Science.">
   <meta property="og:url" content="https://lmx683.github.io/Mingxian-Li---Homepage/">
   <meta property="og:image" content="https://lmx683.github.io/Mingxian-Li---Homepage/assets/img/mingxian-li.png">
-  <script>
-    try {
-      const saved = localStorage.getItem('theme');
-      if (saved === 'light' || saved === 'dark') document.documentElement.dataset.theme = saved;
-    } catch (_) {}
-  </script>
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <style>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <link rel="stylesheet" href="assets/css/theme-luka.css?v=20261005">
+:root { color-scheme: light; --bg:#f5f5f5; --paper:#fff; --text:#444; --heading:#333; --link:#0000ee; --line:#ccc; --highlight:#f4eadb; }
+[data-theme="dark"] { color-scheme:dark; --bg:#202020; --paper:#292929; --text:#ddd; --heading:#f0f0f0; --link:#9ab9ff; --line:#5b5b5b; --highlight:#39342c; }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; background:var(--bg); color:var(--text); font-family:"Times New Roman",Times,"Noto Serif",serif; font-size:18px; line-height:1.5; }
+a { color:var(--link); text-decoration:underline; text-underline-offset:2px; overflow-wrap:anywhere; }
+a:hover { text-decoration-thickness:2px; }
+a:focus-visible,button:focus-visible,summary:focus-visible { outline:2px solid var(--link); outline-offset:4px; }
+.page { max-width:1020px; margin:24px auto; padding:32px 44px 24px; background:var(--paper); box-shadow:0 1px 8px #0000000a; }
+.profile-header { position:relative; min-height:146px; padding:5px 195px 12px 0; }
+h1 { font-size:36px; line-height:1.15; color:var(--heading); margin:5px 0 10px; }
+.profile-role { font-size:21px; margin:0 0 9px; }
+.profile-links { margin:0; display:flex; flex-wrap:wrap; gap:0 10px; align-items:center; }
+.profile-links .separator { color:#888; }
+.portrait { position:absolute; right:0; top:0; width:160px; height:160px; object-fit:cover; object-position:center 25%; border-radius:10px; }
+.section { margin:0 0 27px; scroll-margin-top:24px; }
+h2.section-title { margin:0 0 10px; padding:0 0 3px; font-size:23px; line-height:1.25; text-transform:uppercase; color:var(--heading); border-bottom:1px dashed var(--line); }
+h3 { color:var(--heading); font-size:21px; margin:0 0 4px; line-height:1.35; }
+p { margin:0 0 8px; }
+ul { padding-left:25px; margin:6px 0 12px; }
+li { padding-left:0; margin:2px 0; }
+strong { font-weight:700; }
+.recent-work { margin-top:10px; }
+.news-list { max-height:210px; overflow-y:auto; scrollbar-width:thin; padding-right:10px; }
+.news-list ul { margin:0; }
+.news-list time { white-space:nowrap; }
+.bibliography { list-style:none; padding:0; margin:16px 0 0; }
+.pub-content { background:var(--highlight); padding:12px 15px; }
+.pub-content h3 { font-size:20px; }
+.pub-content h3 a { color:var(--heading); text-decoration:none; }
+.pub-content h3 a:hover { text-decoration:underline; }
+.pub-content .author { font-size:17px; line-height:1.45; }
+.periodical { font-style:italic; margin:7px 0 3px; }
+.pub-summary { margin:7px 0; }
+.exp-detail,.entry-meta { color:var(--text); }
+.exp-period { font-style:italic; margin-bottom:5px; }
+.research-status { font-style:italic; }
+.research-metrics,.eyebrow { display:none; }
+.experience-item { display:flex; align-items:flex-start; gap:15px; }
+.institution-logo { width:52px; height:52px; flex-shrink:0; margin-top:4px; }
+.education-metrics { margin-top:5px; }
+.award-item { display:flex; gap:15px; margin-bottom:7px; }
+.award-year { font-variant-numeric:tabular-nums; }
+.award-text br { display:none; }
+.award-text br::after { content:' '; }
+.skills-list p { margin-bottom:4px; }
+.site-footer { margin-top:32px; padding-top:14px; border-top:1px dashed var(--line); font-size:14px; color:var(--text); }
+.footer-line { display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap; }
+button { font:inherit; color:var(--text); cursor:pointer; }
+.theme-toggle { font-size:14px; background:transparent; border:0; padding:0; text-decoration:underline; }
+.session-tools { margin-top:12px; font-size:13px; }
+.session-tools summary { cursor:pointer; }
+.session-tools p { margin-top:5px; }
+.session-tools button { border:1px solid var(--line); border-radius:3px; background:var(--paper); margin:4px 5px 4px 0; padding:3px 7px; }
+.skip-link { position:absolute; left:16px; top:-100px; background:var(--paper); padding:5px; }
+.skip-link:focus { top:8px; }
+@media(max-width:1060px) { .page { margin:20px; } }
+@media(max-width:640px) { body { font-size:17px; } .page { margin:0; padding:25px 20px; box-shadow:none; } .profile-header { min-height:140px; padding-right:118px; padding-top:2px; } h1 { font-size:30px; } .profile-role { font-size:18px; } .portrait { width:104px; height:130px; border-radius:7px; } .profile-links { gap:2px 7px; font-size:16px; } h2.section-title { font-size:21px; } h3 { font-size:19px; } .pub-content { padding:10px 12px; } .section { margin-bottom:23px; } }
+@media(max-width:380px) { .page { padding:22px 16px; } .profile-header { padding-right:100px; } .portrait { width:88px; height:110px; } h1 { font-size:27px; } .profile-role { font-size:17px; } }
+@media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+@media print { body { background:#fff; } .page { max-width:none; margin:0; padding:0; box-shadow:none; } .session-tools,.theme-toggle { display:none; } a { color:inherit; } }
+  </style>
 </head>
-<body class="theme-luka">
+
+<body>
   <a class="skip-link" href="#main-content">Skip to content</a>
-  <nav class="top-nav" aria-label="Main navigation">
-    <div class="nav-container">
-      <div class="nav-left">
-        <a class="wordmark" href="#about">Mingxian Li<span aria-hidden="true">.</span></a>
-      </div>
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#experience">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#education">Education</a>
-      </div>
-      <div class="nav-right">
-        <button id="themeToggle" class="theme-toggle" type="button" title="Toggle theme" aria-label="Toggle dark mode" aria-pressed="false">
-          <span class="theme-symbol" aria-hidden="true">◐</span>
-        </button>
-      </div>
-    </div>
-  </nav>
-
-  <div class="wrapper">
-    <header class="sidebar">
-      <div class="profile-card">
-        <div class="image avatar"><img src="assets/img/mingxian-li.png" alt="Mingxian Li" width="184" height="184" fetchpriority="high" decoding="async"></div>
-
-        <h1 class="site-name">Mingxian Li</h1>
-        <p class="profile-role">Undergraduate · Sun Yat-sen University</p>
-        <p class="profile-location">Shenzhen, China</p>
-        <a class="site-email" href="mailto:limx253@mail2.sysu.edu.cn">limx253@mail2.sysu.edu.cn</a>
-
-        <div class="social-icons">
-          <a href="mailto:limx253@mail2.sysu.edu.cn" title="Email" aria-label="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i><span>Email</span></a>
-          <a href="https://github.com/LMX683" title="GitHub" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i><span>GitHub</span></a>
-          <a href="https://scholar.google.com/citations?user=QG14KZsAAAAJ&hl=zh-CN" title="Google Scholar" aria-label="Google Scholar"><i class="ai ai-google-scholar" aria-hidden="true"></i><span>Scholar</span></a>
-        </div>
-
-        <div class="visitor-card">
-          <div class="visitor-card-title">Research Interests</div>
-          <ul class="interest-list"><li>Multimodal Reasoning</li><li>3D Spatial Intelligence</li><li>AI for Science</li></ul>
-        </div>
-      </div>
+  <div class="page">
+    <header class="profile-header">
+      <img class="portrait" src="assets/img/mingxian-li.png" alt="Mingxian Li" width="160" height="160" fetchpriority="high" decoding="async">
+      <h1>Mingxian Li</h1>
+      <p class="profile-role">Undergraduate @ Sun Yat-sen University</p>
+      <nav class="profile-links" aria-label="Contact and profiles">
+        <a href="mailto:limx253@mail2.sysu.edu.cn">Email</a><span class="separator" aria-hidden="true">/</span>
+        <a href="assets/cv/Mingxian-Li-CV.pdf" target="_blank" rel="noopener">CV</a><span class="separator" aria-hidden="true">/</span>
+        <a href="https://github.com/LMX683">GitHub</a><span class="separator" aria-hidden="true">/</span>
+        <a href="https://scholar.google.com/citations?user=QG14KZsAAAAJ&amp;hl=zh-CN">Google Scholar</a>
+      </nav>
     </header>
+    <main id="main-content" tabindex="-1">
 
-    <main class="content" id="main-content" tabindex="-1">
       <section class="section" id="about">
-        <p class="eyebrow">MULTIMODAL LEARNING · AI FOR SCIENCE</p>
-        <h2 class="intro-title">Connecting visual understanding<br class="desktop-break"> with scientific reasoning.</h2>
-        <div class="section-body">
-          <p>I am <strong>Mingxian Li</strong>, an undergraduate pursuing a B.Eng. in <strong>Microelectronics Science and Engineering</strong> at <strong>Sun Yat-sen University</strong> in Shenzhen, China.</p>
-          <p>My research interests lie in <strong>multimodal reasoning, 3D spatial intelligence, and AI for Science</strong>. At the HCP Lab, I work with advisors <strong>Xiaodan Liang</strong> and <strong>Xiao Dong</strong> on diagnosing and improving how vision-language models connect 3D molecular geometry with chemical rules.</p>
-          <p>My current work includes <a href="#experience"><strong>SeeChem</strong></a>, a diagnostic benchmark for 3D chemical reasoning, and chemistry benchmark and data synthesis through a Sun Yat-sen University–Huawei collaboration.</p>
-          <div class="intro-actions"><a class="button primary" href="assets/cv/Mingxian-Li-CV.pdf" target="_blank" rel="noopener">Download CV <span class="file-label">PDF ↗</span></a><a class="button secondary" href="#experience">Explore research <span aria-hidden="true">↓</span></a></div>
+        <h2 class="section-title">About Me</h2>
+        <p>I am an undergraduate pursuing a B.Eng. in <strong>Microelectronics Science and Engineering</strong> at <strong>Sun Yat-sen University</strong> in Shenzhen, China. At the HCP Lab, I work with advisors <strong>Xiaodan Liang</strong> and <strong>Xiao Dong</strong>.</p>
+        <p>My research interests are <strong>multimodal reasoning, 3D spatial intelligence, and AI for Science</strong>. I study how vision-language models connect 3D molecular geometry with chemical rules, with a focus on diagnosing reasoning failures and improving geometry-aware scientific reasoning.</p>
+        <p class="recent-work">My current work includes:</p>
+        <ul>
+          <li><strong>3D Molecular Reasoning:</strong> <a href="#publications">SeeChem</a>, a diagnostic benchmark, and <a href="#experience">EasySeeChem-VLM</a>, a geometry-enhanced vision-language model.</li>
+          <li><strong>Chemistry Benchmark and Data Synthesis:</strong> <a href="#projects">Sun Yat-sen University–Huawei collaboration</a> on advanced university and competition chemistry.</li>
+        </ul>
+      </section>
+      <section class="section" id="news">
+        <h2 class="section-title">News</h2>
+        <div class="news-list" role="region" aria-label="Research updates" tabindex="0">
+          <ul>
+            <li><time datetime="2026-04">[2026.04]</time> Started working on chemistry benchmark and data synthesis through a Sun Yat-sen University–Huawei collaboration.</li>
+            <li><time datetime="2026-03">[2026.03]</time> Started the SeeChem project on 3D molecular reasoning in vision-language models at the HCP Lab.</li>
+          </ul>
         </div>
       </section>
-
-      <section class="section" id="experience">
+<section class="section" id="publications">
+        <h2 class="section-title">Publications &amp; Manuscripts</h2>
+        <p>Research profile on <a href="https://scholar.google.com/citations?user=QG14KZsAAAAJ&amp;hl=zh-CN">Google Scholar</a>. <sup>*</sup> denotes equal contribution.</p>
+        <div class="section-body publications">
+          <ol class="bibliography">
+            <li>
+              <article class="pub-content">
+                <h3 class="entry-title">SeeChem: A Diagnostic Benchmark for 3D Chemical Reasoning in Vision-Language Models</h3>
+                <p class="author"><strong>Mingxian Li<sup>*</sup></strong>, Kun Xiang<sup>*</sup>, Xiao Dong<sup>*</sup>, Haoyuan Li, Zhao Zhen-Hua, Jingbin Tan, Terry Jingchen Zhang, Haiyang Hu, Yangle Fang, Kunkun Liu, Changzheng Zhang, Dandan Tu, Xiaodan Liang</p>
+                <p class="pub-summary">A diagnostic benchmark for grounding 3D molecular geometry and applying chemical rules within shared molecular contexts.</p>
+                <p class="periodical">Under Review · AAAI 2027</p>
+                <p class="exp-detail"><sup>*</sup> Equal contribution.</p>
+              </article>
+            </li>
+          </ol>
+        </div>
+      </section><section class="section" id="experience">
         <h2 class="section-title">Research Experience</h2>
         <div class="section-body">
           <article class="card featured-card">
-            <p class="eyebrow">FEATURED RESEARCH</p>
             <h3 class="entry-title">SeeChem: 3D Molecular Reasoning in VLMs</h3>
             <p class="exp-period">Mar. 2026 – Present</p>
             <p class="entry-meta">Sun Yat-sen University, HCP Lab<br>Advisors: Xiaodan Liang, Xiao Dong</p>
             <p>Diagnosing and improving how vision-language models connect 3D molecular geometry with chemical rules.</p>
-            <dl class="research-metrics" aria-label="SeeChem benchmark at a glance">
-              <div><dt>Questions</dt><dd>5,065</dd></div>
-              <div><dt>Molecular instances</dt><dd>320</dd></div>
-              <div><dt>Reasoning tasks</dt><dd>5</dd></div>
-            </dl>
             <ul class="contributions">
               <li>Developed <strong>SeeChem</strong>, a diagnostic benchmark with <strong>5,065 questions across 320 molecular instances and five tasks</strong>, aligning spatial grounding, local rule application, and integrated reasoning within shared molecular contexts.</li>
               <li>Constructed <strong>SeeChem-Data</strong> with verifiable supervision across three reasoning stages, using molecular instances excluded from the benchmark.</li>
@@ -108,25 +147,7 @@
             <p class="research-status">Manuscript under review at AAAI 2027; advanced to Phase 2 review.</p>
           </article>
         </div>
-      </section>
-
-      <section class="section" id="publications">
-        <h2 class="section-title">Publications &amp; Manuscripts</h2>
-        <div class="section-body publications">
-          <ol class="bibliography">
-            <li>
-              <article class="pub-content">
-                <h3 class="entry-title">SeeChem: A Diagnostic Benchmark for 3D Chemical Reasoning in Vision-Language Models</h3>
-                <p class="author"><strong>Mingxian Li<sup>*</sup></strong>, Kun Xiang<sup>*</sup>, Xiao Dong<sup>*</sup>, Haoyuan Li, Zhao Zhen-Hua, Jingbin Tan, Terry Jingchen Zhang, Haiyang Hu, Yangle Fang, Kunkun Liu, Changzheng Zhang, Dandan Tu, Xiaodan Liang</p>
-                <p class="periodical">Under Review · AAAI 2027</p>
-                <p class="exp-detail"><sup>*</sup> Equal contribution.</p>
-              </article>
-            </li>
-          </ol>
-        </div>
-      </section>
-
-      <section class="section" id="projects">
+      </section><section class="section" id="projects">
         <h2 class="section-title">Project Experience</h2>
         <div class="section-body">
           <article class="card">
@@ -141,9 +162,7 @@
             </ul>
           </article>
         </div>
-      </section>
-
-      <section class="section" id="education">
+      </section><section class="section" id="education">
         <h2 class="section-title">Education</h2>
         <div class="section-body experience-item">
           <img src="assets/img/sysu.svg" alt="Sun Yat-sen University logo" class="institution-logo" width="52" height="52" loading="lazy">
@@ -155,19 +174,7 @@
             <p class="education-metrics"><strong>GPA:</strong> 3.7/4.0 <span aria-hidden="true">·</span> <strong>Data Structures:</strong> 97/100</p>
           </div>
         </div>
-      </section>
-
-      <section class="section" id="skills">
-        <h2 class="section-title">Technical Skills</h2>
-        <div class="section-body skills-list">
-          <p><strong>Programming Languages:</strong> Python, C, C++.</p>
-          <p><strong>Deep Learning Frameworks:</strong> PyTorch, TensorFlow.</p>
-          <p><strong>Development &amp; Computing Tools:</strong> Linux, Git/GitHub, Docker, Conda, Slurm, Jupyter Notebook, VS Code.</p>
-          <p><strong>Writing &amp; Presentation:</strong> LaTeX, Markdown, Microsoft Office, draw.io.</p>
-        </div>
-      </section>
-
-      <section class="section" id="awards">
+      </section><section class="section" id="awards">
         <h2 class="section-title">Scholarships</h2>
         <div class="section-body awards-grid">
           <div class="award-item">
@@ -179,16 +186,42 @@
             <div class="award-text"><strong>Special Scholarship</strong><br>Sun Yat-sen University</div>
           </div>
         </div>
+      </section><section class="section" id="skills">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="section-body skills-list">
+          <p><strong>Programming Languages:</strong> Python, C, C++.</p>
+          <p><strong>Deep Learning Frameworks:</strong> PyTorch, TensorFlow.</p>
+          <p><strong>Development &amp; Computing Tools:</strong> Linux, Git/GitHub, Docker, Conda, Slurm, Jupyter Notebook, VS Code.</p>
+          <p><strong>Writing &amp; Presentation:</strong> LaTeX, Markdown, Microsoft Office, draw.io.</p>
+        </div>
       </section>
     </main>
-
     <footer class="site-footer">
-      <p>
-        &copy; 2026 Mingxian Li. All rights reserved.
-        <br>
-        <span class="template-credit"><a href="https://github.com/wzsyyh/luka-homepage-template">Luka Homepage Template</a> by <a href="https://wzsyyh.github.io/">Yuheng Yang</a></span>
-      </p>
-      <details class="session-tools" data-session-ignore>
+      <div class="footer-line"><span>&copy; 2026 Mingxian Li.</span><button id="themeToggle" class="theme-toggle" type="button" aria-pressed="false">Dark mode</button></div>
+
+    </footer>
+  </div>
+  <script>
+    (() => {
+      const root = document.documentElement;
+      const button = document.getElementById('themeToggle');
+      function apply(theme) {
+        root.dataset.theme = theme;
+        button.textContent = theme === 'dark' ? 'Light mode' : 'Dark mode';
+        button.setAttribute('aria-pressed', String(theme === 'dark'));
+        document.querySelector('meta[name="theme-color"]').content = theme === 'dark' ? '#202020' : '#f5f5f5';
+      }
+      let saved;
+      try { saved = localStorage.getItem('theme'); } catch (_) {}
+      apply(saved === 'dark' ? 'dark' : 'light');
+      button.addEventListener('click', () => {
+        const theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+        apply(theme);
+        try { localStorage.setItem('theme', theme); } catch (_) {}
+      });
+    })();
+  </script>
+  <template id="owner-tools-template"><details class="session-tools" data-session-ignore>
         <summary>Session recording</summary>
         <p>Optional local recording to help inspect this visit. Form values are masked. No data is uploaded.</p>
         <button id="session-toggle" type="button">Start recording</button>
@@ -196,12 +229,20 @@
         <button id="session-clear" type="button">Clear recording</button>
         <a href="session-player.html">Open replay viewer</a>
         <p id="session-status" role="status">Recording off · no upload</p>
-      </details>
-    </footer>
-  </div>
-
-  <script src="assets/js/main.js" defer></script>
-  <script src="assets/js/session-tracker.js"></script>
-  <script src="assets/js/session-controls.js"></script>
+      </details></template>
+  <script>
+    // Owner diagnostics are available only in an explicitly enabled local preview.
+    if (['localhost', '127.0.0.1', '::1', '[::1]'].includes(location.hostname) && new URLSearchParams(location.search).get('owner-tools') === '1') {
+      document.querySelector('.site-footer').append(document.getElementById('owner-tools-template').content.cloneNode(true));
+      const tracker = document.createElement('script');
+      tracker.src = 'assets/js/session-tracker.js';
+      tracker.onload = () => {
+        const controls = document.createElement('script');
+        controls.src = 'assets/js/session-controls.js';
+        document.body.append(controls);
+      };
+      document.body.append(tracker);
+    }
+  </script>
 </body>
 </html>
