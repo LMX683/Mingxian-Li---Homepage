@@ -2,7 +2,7 @@ const {chromium}=require('playwright');const fs=require('fs'),os=require('os'),p
 const fixture=path.join(os.tmpdir(),'homepage-session-test-'+process.pid+'.json');
 (async()=>{
  const browser=await chromium.launch({headless:true,channel:process.env.PLAYWRIGHT_CHANNEL || undefined});const page=await browser.newPage({viewport:{width:1200,height:800}});const errors=[];page.on('pageerror',e=>errors.push(e.message));
- await page.goto('http://127.0.0.1:8765/');
+ await page.goto('http://127.0.0.1:8765/?owner-tools=1');
  await page.evaluate(()=>{
   const area=document.createElement('div');area.id='fixture';area.innerHTML='<input type="password" value="TOP_SECRET"><div data-private>PRIVATE_TEXT</div><div id="move">before</div><div id="other"></div>';document.body.append(area);
   window.testTracker=new SessionTracker();testTracker.start();
@@ -30,7 +30,7 @@ const fixture=path.join(os.tmpdir(),'homepage-session-test-'+process.pid+'.json'
  await page.evaluate(async s=>{await player.load(s);},malicious);await page.waitForTimeout(100);
  if(await page.evaluate(()=>window.__executed))throw Error('Imported script executed');
  // Event cap must stop without recursively adding session-end forever.
- await page.goto('http://127.0.0.1:8765/');
+ await page.goto('http://127.0.0.1:8765/?owner-tools=1');
  const capped=await page.evaluate(()=>{const t=new SessionTracker({maxEvents:3});t.start();t.emit('click');t.emit('click');return {running:t.running,count:t.events.length};});
  if(capped.running||capped.count!==4)throw Error('Cap failed');
  if(errors.length)throw Error(errors.join('\n'));console.log('PASS: privacy, mutations, moves, seek, playback, script isolation, event cap; '+session.events.length+' events');
