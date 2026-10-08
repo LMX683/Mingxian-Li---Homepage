@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mingxian Li - Homepage</title>
-  <meta name="description" content="Mingxian Li is an undergraduate at Sun Yat-sen University researching multimodal reasoning, 3D spatial intelligence, and AI for Science. His work includes SeeChem, a diagnostic benchmark for 3D chemical reasoning in vision-language models.">
+  <meta name="description" content="Mingxian Li is an undergraduate at Sun Yat-sen University researching multimodal reasoning, 3D spatial intelligence, and AI for Science. His work includes SeeChem and ReactWorld, geometric world models for chemical reactions.">
   <meta name="keywords" content="Mingxian Li, Sun Yat-sen University, SeeChem, multimodal reasoning, 3D spatial intelligence, AI for Science, vision-language models, molecular reasoning">
   <meta name="theme-color" content="#f5f5f5">
   <link rel="canonical" href="https://lmx683.github.io/Mingxian-Li---Homepage/">
@@ -29,6 +29,8 @@ a:focus-visible,button:focus-visible,summary:focus-visible { outline:2px solid v
 h1 { font-size:36px; line-height:1.15; color:var(--heading); margin:5px 0 10px; }
 .profile-role { font-size:21px; margin:0 0 9px; }
 .profile-links { margin:0; display:flex; flex-wrap:wrap; gap:0 10px; align-items:center; }
+.internship-note { margin:14px 0 8px; }
+.card + .card { margin-top:22px; }
 .profile-links .separator { color:#888; }
 .portrait { position:absolute; right:0; top:0; width:160px; height:160px; object-fit:cover; object-position:center 25%; border-radius:10px; }
 .section { margin:0 0 27px; scroll-margin-top:24px; }
@@ -91,18 +93,22 @@ button { font:inherit; color:var(--text); cursor:pointer; }
         <a href="mailto:limx253@mail2.sysu.edu.cn">Email</a><span class="separator" aria-hidden="true">/</span>
         <a href="assets/cv/Mingxian-Li-CV.pdf" target="_blank" rel="noopener">CV</a><span class="separator" aria-hidden="true">/</span>
         <a href="https://github.com/LMX683">GitHub</a><span class="separator" aria-hidden="true">/</span>
-        <a href="https://scholar.google.com/citations?user=QG14KZsAAAAJ&amp;hl=zh-CN">Google Scholar</a>
+        <a href="https://scholar.google.com/citations?user=QG14KZsAAAAJ&amp;hl=zh-CN">Google Scholar</a><span class="separator" aria-hidden="true">/</span>
+        <a href="assets/img/wechat-qr.jpg" target="_blank" rel="noopener" aria-label="WeChat: open my contact QR code">WeChat</a><span class="separator" aria-hidden="true">/</span>
+        <a href="https://www.linkedin.com/in/mingxian-li-028a85395/" target="_blank" rel="noopener">LinkedIn</a>
       </nav>
+      <p class="internship-note"><strong>I am currently seeking research internship opportunities</strong> in multimodal reasoning, 3D spatial intelligence, and AI for Science. If my interests align with your team’s work, please feel free to <a href="mailto:limx253@mail2.sysu.edu.cn">contact me</a>.</p>
     </header>
     <main id="main-content" tabindex="-1">
 
       <section class="section" id="about">
         <h2 class="section-title">About Me</h2>
-        <p>I am an undergraduate pursuing a B.Eng. in <strong>Microelectronics Science and Engineering</strong> at <strong>Sun Yat-sen University</strong> in Shenzhen, China. At the HCP Lab, I work with advisors <strong>Xiaodan Liang</strong> and <strong>Xiao Dong</strong>.</p>
+        <p>I am an undergraduate pursuing a B.Eng. in <strong>Microelectronics Science and Engineering</strong> at <strong>Sun Yat-sen University</strong> in Shenzhen, China. At <strong>HCP Lab, Sun Yat-sen University</strong>, I am supervised by <strong>Xiaodan Liang</strong> and <strong>Xiao Dong</strong>.</p>
         <p>My research interests are <strong>multimodal reasoning, 3D spatial intelligence, and AI for Science</strong>. I study how vision-language models connect 3D molecular geometry with chemical rules, with a focus on diagnosing reasoning failures and improving geometry-aware scientific reasoning.</p>
-        <p class="recent-work">My current work includes:</p>
+        <p class="recent-work">My research includes:</p>
         <ul>
           <li><strong>3D Molecular Reasoning:</strong> <a href="#publications">SeeChem</a>, a diagnostic benchmark, and <a href="#experience">EasySeeChem-VLM</a>, a geometry-enhanced vision-language model.</li>
+          <li><strong>Geometric Reaction World Models:</strong> <a href="#reactworld">ReactWorld</a>, exploring non-autoregressive models for condition-driven reaction product prediction and 3D transition generation.</li>
           <li><strong>Chemistry Benchmark and Data Synthesis:</strong> <a href="#projects">Sun Yat-sen University–Huawei collaboration</a> on advanced university and competition chemistry.</li>
         </ul>
       </section>
@@ -110,6 +116,7 @@ button { font:inherit; color:var(--text); cursor:pointer; }
         <h2 class="section-title">News</h2>
         <div class="news-list" role="region" aria-label="Research updates" tabindex="0">
           <ul>
+            <li><time datetime="2026-10">[2026.10]</time> Started ReactWorld on geometric world models for chemical reactions at the HCP Lab.</li>
             <li><time datetime="2026-04">[2026.04]</time> Started working on chemistry benchmark and data synthesis through a Sun Yat-sen University–Huawei collaboration.</li>
             <li><time datetime="2026-03">[2026.03]</time> Started the SeeChem project on 3D molecular reasoning in vision-language models at the HCP Lab.</li>
           </ul>
@@ -135,31 +142,27 @@ button { font:inherit; color:var(--text); cursor:pointer; }
         <h2 class="section-title">Research Experience</h2>
         <div class="section-body">
           <article class="card featured-card">
-            <h3 class="entry-title">SeeChem: 3D Molecular Reasoning in VLMs</h3>
-            <p class="exp-period">Mar. 2026 – Present</p>
-            <p class="entry-meta">Sun Yat-sen University, HCP Lab<br>Advisors: Xiaodan Liang, Xiao Dong</p>
-            <p>Diagnosing and improving how vision-language models connect 3D molecular geometry with chemical rules.</p>
-            <ul class="contributions">
-              <li>Developed <strong>SeeChem</strong>, a diagnostic benchmark with <strong>5,065 questions across 320 molecular instances and five tasks</strong>, aligning spatial grounding, local rule application, and integrated reasoning within shared molecular contexts.</li>
-              <li>Constructed <strong>SeeChem-Data</strong> with verifiable supervision across three reasoning stages, using molecular instances excluded from the benchmark.</li>
-              <li>Developed <strong>EasySeeChem-VLM</strong>, integrating <strong>Uni-Mol2</strong> geometry representations into <strong>Qwen3-VL-8B</strong> through a gated projector; evaluated the method alongside <strong>nine external VLMs</strong> with task- and stage-specific analysis.</li>
-            </ul>
+            <h3 class="entry-title">HCP Lab, Sun Yat-sen University</h3>
+            <p class="entry-meta">Supervised by <strong><a href="https://scholar.google.com/citations?user=voxznZAAAAAJ&amp;hl=zh-CN&amp;oi=ao">Xiaodan Liang</a></strong> and <strong><a href="https://scholar.google.com/citations?hl=zh-CN&amp;user=jXLkbw8AAAAJ">Xiao Dong</a></strong></p>
+            <p class="exp-period">Mar. 2026 – Sep. 2026</p>
+            <p><strong>SeeChem: 3D Molecular Reasoning in VLMs.</strong> Developed a benchmark with <strong>5,065 questions across 320 molecular instances and five tasks</strong>, and <strong>SeeChem-Data</strong> for verifiable supervision. Built <strong>EasySeeChem-VLM</strong> by integrating <strong>Uni-Mol2</strong> into <strong>Qwen3-VL-8B</strong>; evaluated it alongside <strong>nine external VLMs</strong>.</p>
             <p class="research-status">Manuscript under review at AAAI 2027; advanced to Phase 2 review.</p>
+          </article>
+          <article class="card" id="reactworld">
+            <h3 class="entry-title">HCP Lab, Sun Yat-sen University</h3>
+            <p class="entry-meta">Supervised by <strong><a href="https://scholar.google.com/citations?user=voxznZAAAAAJ&amp;hl=zh-CN&amp;oi=ao">Xiaodan Liang</a></strong> and <strong><a href="https://scholar.google.com/citations?hl=zh-CN&amp;user=jXLkbw8AAAAJ">Xiao Dong</a></strong></p>
+            <p class="exp-period">Oct. 2026 – Present</p>
+            <p><strong>ReactWorld: Geometric World Models for Chemical Reactions.</strong> Exploring non-autoregressive geometric world models for condition-driven reaction product prediction and 3D transition generation.</p>
           </article>
         </div>
       </section><section class="section" id="projects">
         <h2 class="section-title">Project Experience</h2>
         <div class="section-body">
           <article class="card">
-            <h3 class="entry-title">Chemistry Benchmark and Data Synthesis</h3>
+            <h3 class="entry-title">Sun Yat-sen University–Huawei Collaboration</h3>
+            <p class="entry-meta">Supervised by <strong><a href="https://scholar.google.com/citations?user=voxznZAAAAAJ&amp;hl=zh-CN&amp;oi=ao">Xiaodan Liang</a></strong> and <strong><a href="https://scholar.google.com/citations?hl=zh-CN&amp;user=jXLkbw8AAAAJ">Xiao Dong</a></strong></p>
             <p class="exp-period">Apr. 2026 – Present</p>
-            <p class="entry-meta">Sun Yat-sen University–Huawei Collaboration<br>Advisors: Xiaodan Liang, Xiao Dong</p>
-            <p>Benchmark and data synthesis for advanced university and competition chemistry.</p>
-            <ul class="contributions">
-              <li>Curated <strong>high-difficulty chemistry problems</strong> from frontier benchmarks published at leading conferences.</li>
-              <li>Annotated <strong>chain-of-thought (CoT) solutions</strong> with explicit, step-by-step chemical reasoning.</li>
-              <li>Contributed chemistry questions and CoT annotations for <strong>Huawei’s model training</strong>.</li>
-            </ul>
+            <p><strong>Chemistry Benchmark and Data Synthesis.</strong> Curated <strong>high-difficulty chemistry problems</strong> from frontier benchmarks and annotated <strong>chain-of-thought solutions</strong> with explicit chemical reasoning for <strong>Huawei’s model training</strong>.</p>
           </article>
         </div>
       </section><section class="section" id="education">
@@ -179,7 +182,7 @@ button { font:inherit; color:var(--text); cursor:pointer; }
         <div class="section-body awards-grid">
           <div class="award-item">
             <span class="award-year">2026</span>
-            <div class="award-text"><strong>Outstanding Student Scholarship (Third Prize)</strong><br>Sun Yat-sen University</div>
+            <div class="award-text"><strong>Outstanding Student Scholarship</strong><br>Sun Yat-sen University</div>
           </div>
           <div class="award-item">
             <span class="award-year">2025</span>
